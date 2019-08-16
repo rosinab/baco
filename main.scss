@@ -1,0 +1,199 @@
+$mainorange: #ff6633;
+$mainwhite: white;
+$mainblack: black;
+$darkerorange: #ff531a;
+
+@mixin primaryfont 
+{font-family: 'Open Sans', sans-serif; }
+
+body {
+background-color: $mainwhite;
+@include primaryfont()
+};
+
+p {
+&.headline {
+font-weight: bold;
+color: $mainwhite;
+}
+&.boxtext {
+color: $mainwhite;
+}
+&.carotext {
+color: $mainwhite;
+}
+}
+
+h2 {
+color: $mainwhite;
+width: 500px;
+margin-left: 6rem;
+}
+
+h3 {
+    text-align: center;
+    &.abouthead{
+    color: $mainwhite;
+    }
+    &.servicestitle {
+    color: $mainblack;
+    }
+    }
+
+h5 {
+    &.titletext {
+    font-weight: bold;
+    font-size: 14px;
+    padding-top: 5px;
+    }
+}
+
+    .titletext {
+    margin-top: 0px;
+    text-align: center;
+    }
+
+    button {
+        font-weight: bold;
+        &.specquote {
+        width: 42%;
+        height: 2rem;
+        border: solid $mainorange 3px;
+        background-color: $mainwhite;
+        margin-left: 2px;
+        }
+        &.aboutbutton {
+        width: 8%;
+        height: 2rem;
+        background-color: $mainorange;
+        color: $mainwhite;
+        border: solid $mainwhite 3px;
+        }
+        &.carobutt {
+            width: 20%;
+            height: 2rem;
+            border: none;
+            background-color: #ff531a;
+            margin-left: 2px;
+            color: $mainwhite;
+        }
+        }
+.banner {
+    display: flex;
+    justify-content: center;
+    height: 3rem;
+    padding: 250px 0;
+    background-repeat: no-repeat; 
+    background-position: center; 
+    background-size: cover;
+    overflow: hidden;
+    }
+
+.caro {
+overflow-y: hidden;
+width: 100vw;
+}
+
+.bannertext {
+text-align: center;
+width: 700px;
+margin-left:650px;
+}
+
+.undercarousel {
+background-color: $mainorange;
+width: 100vw;
+color: $mainwhite;
+height: 2em;
+}
+
+
+.services {
+display: flex;
+justify-content: center;
+}
+
+.titleplusimage {
+display: flex;
+}
+
+.img {
+margin: 10px 4px 0 0;
+height: 90%;
+}
+
+.servicemain {
+margin-top: -5px;
+}
+
+.iefix {
+margin-top: 8px;
+}
+
+.skip, .comwaste, .recycle {
+display: flex;
+flex-direction: column;
+margin: 0 30px;
+}
+
+
+.about {
+background-color: $mainorange;
+background-image: url(img/bee.png);
+background-repeat: no-repeat;
+background-position-y: -210px;
+height: 18rem;
+margin-top: 25px;
+text-align: center;
+padding-top: 80px;
+}
+
+
+.latest {
+display: flex;
+justify-content: center;
+}
+
+.article {
+width: 18%;
+margin: 0 20px;
+}
+
+@media only screen and (max-width: 540px) {
+.services {
+    display: flex;
+    flex-direction: column;
+    }
+
+.latest {
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+
+.newspic {
+width: 50vw;
+}
+
+.mobart {
+display: none;
+}
+
+.about {
+    background-image: none;
+    padding-top: 40px;
+    height: 300px;
+    }
+    
+    button {
+    &.aboutbutton {
+    width: 110px;
+    }
+}
+    
+    h3 {
+    &.abouthead {
+    margin: 0;
+    }
+}
+}
