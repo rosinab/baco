@@ -55,6 +55,10 @@ h5 {
     }
 }
 
+hr {
+display: none;
+}
+
     .titletext {
     margin-top: 0px;
     text-align: center;
@@ -187,6 +191,11 @@ h4 {
 text-align: center;
 }
 
+hr {
+    display: block;
+    border-top: 1 px black dotted;
+}
+
 .caro{
     display: none;
 }
@@ -231,7 +240,6 @@ display: none;
 .article {
     width: 94vw;
     margin: 4px 15px;
-    border: 1px $mainorange solid;
     }
 
     .titleplusimage {
@@ -241,6 +249,24 @@ display: none;
 
 @media only screen and (max-width: 360px) {
 
+hr {
+    display: block;
+    border-top: 1 px black dotted;
+    margin-top: 1rem;
+}
+
+p {
+font-size: 14px;
+&.boxtext{
+margin: 1rem 5px;
+width: 94%;
+}
+&.headline{
+    margin: 1rem 5px;
+    width: 94%;
+    }
+}
+
 button {
 &.specquote {
 width: 60%;
@@ -248,15 +274,23 @@ width: 60%;
 }
 
 .titletext {
-    font-size: 12px;
+font-size: 12px;
 }
 
 .undercarousel {
 height: 3rem;
 }
 
+.comwaste, .recycle, .skip {
+text-align: center;
+}
+
+.titleplusimage {
+align-self: center;
+}
+
 .about {
-height: 360px;
+height: 300px;
 }
 
 }
