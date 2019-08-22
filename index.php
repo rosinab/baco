@@ -20,7 +20,7 @@
 <h2>Headline To Go Here</h2>
     <p class="carotext">Lorem ipsum dolor sit amet, consectetur adipicising elit. Maecenas porta auctor velit, quis lacinia snim comdimentum nec. Maecenas porta auctor.</p>
     <button class="carobutt">Get A Quote &rarr;</button>
-    </div> 
+    </div>
 </div>
     <div class="banner" style="background-image: url('img/caro1.png'); background-repeat: no-repeat; background-position: center; background-size: cover;">  
     <div class="bannertext"> 
@@ -79,32 +79,32 @@
 <h3 class="servicestitle">Latest News</h3>
 <div class="latest">
     <div class="article">
-    <img src="img/car1.png" class="newspic">
-    <p><i class="far fa-calendar-alt"></i> 22/07/19</p>
+    <img src="img/car1.png" class="tab newspic">
+    <p class="date"><i class="far fa-calendar-alt"></i> 22/07/19</p>
     <h4>Headline 1</h4>
-    <p>Whether you're in need of a one-off waste removal service for an upcoming project, or you.</p>
-    <a>Read More &rarr;</a>
+    <p class="mobp">Whether you're in need of a one-off waste removal service for an upcoming project, or you.</p>
+    <a class="maina">Read More &rarr;</a>
 </div>
     <div class="article">
-    <img src="img/car2.png" class="newspic">
-    <p><i class="far fa-calendar-alt"></i> 22/07/19</p>
+    <img src="img/car2.png" class="tab newspic">
+    <p class="date"><i class="far fa-calendar-alt"></i> 22/07/19</p>
     <h4>Headline 2</h4>
-    <p>Whether you're in need of a one-off waste removal service for an upcoming project, or you...</p>
-    <a>Read More &rarr;</a>
+    <p class="mobp">Whether you're in need of a one-off waste removal service for an upcoming project, or you...</p>
+    <a class="maina">Read More &rarr;</a>
 </div>
 <div class="article mobart">
-    <img src="img/car3.png">
+    <img src="img/car3.png" class="tab">
     <p><i class="far fa-calendar-alt"></i> 22/07/19</p>
     <h4>Headline 3</h4>
     <p>Whether you're in need of a one-off waste removal service for an upcoming project, or you...</p>
-    <a>Read More &rarr;</a>
+    <a class="maina">Read More &rarr;</a>
 </div>
 <div class="article mobart">
-    <img src="img/car4.png">
+    <img src="img/car4.png" class="tab">
     <p><i class="far fa-calendar-alt"></i> 22/07/19</p>
     <h4>Headline 4</h4>
     <p>Whether you're in need of a one-off waste removal service for an upcoming project, or you...</p>
-    <a>Read More &rarr;</a>
+    <a class="maina">Read More &rarr;</a>
 </div>
 </div>
 <?php include 'footer.php' ?>

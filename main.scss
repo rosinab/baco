@@ -24,6 +24,13 @@ color: $mainwhite;
 }
 }
 
+a {
+&.maina {
+color: $mainblack;
+font-weight: bold;
+}
+}
+
 h2 {
 color: $mainwhite;
 width: 500px;
@@ -81,7 +88,6 @@ h5 {
 .banner {
     display: flex;
     justify-content: center;
-    height: 3rem;
     padding: 250px 0;
     background-repeat: no-repeat; 
     background-position: center; 
@@ -97,7 +103,7 @@ width: 100vw;
 .bannertext {
 text-align: center;
 width: 700px;
-margin-left:650px;
+margin-left: 35rem;
 }
 
 .undercarousel {
@@ -143,6 +149,7 @@ background-image: url(img/bee.png);
 background-repeat: no-repeat;
 background-position-y: -210px;
 height: 18rem;
+width: 100vw;
 margin-top: 25px;
 text-align: center;
 padding-top: 80px;
@@ -160,6 +167,35 @@ margin: 0 20px;
 }
 
 @media only screen and (max-width: 540px) {
+
+p {
+&.mobp{
+text-align: center;
+}
+&.date {
+margin-left: 10px;
+}
+}
+
+h3 {
+    &.abouthead {
+    margin: 0;
+    }
+}
+
+h4 {
+text-align: center;
+}
+
+.caro{
+    display: none;
+}
+
+.undercarousel {
+width: 96vw;
+margin-top: 5px;
+}
+
 .services {
     display: flex;
     flex-direction: column;
@@ -168,11 +204,11 @@ margin: 0 20px;
 .latest {
 display: flex;
 flex-direction: column;
-justify-content: center;
+margin-left: -14px;
 }
 
 .newspic {
-width: 50vw;
+width: 94vw;
 }
 
 .mobart {
@@ -190,10 +226,85 @@ display: none;
     width: 110px;
     }
 }
-    
-    h3 {
-    &.abouthead {
-    margin: 0;
+
+
+.article {
+    width: 94vw;
+    margin: 4px 15px;
+    border: 1px $mainorange solid;
     }
+
+    .titleplusimage {
+        margin-top: 9px;
+        }
 }
+
+@media only screen and (max-width: 360px) {
+
+button {
+&.specquote {
+width: 60%;
+}
+}
+
+.titletext {
+    font-size: 12px;
+}
+
+.undercarousel {
+height: 3rem;
+}
+
+.about {
+height: 360px;
+}
+
+}
+
+@media only screen and (max-width: 768px) {
+.bannertext {
+display: flex;
+justify-content: center;
+flex-direction: column;
+}
+
+}
+
+@media only screen and (max-width: 1366px) {
+
+.mainnav {
+width: 900px;
+}
+
+img {
+    &.tab {
+    width: 100%;
+    }
+    }
+
+.bannertext {
+margin-left: 20rem;
+}
+}
+
+
+@media only screen and (max-width: 1025px) {
+
+button {
+&.aboutbutton {
+width: 110px;
+}
+}
+
+img {
+&.tab {
+width: 100%;
+}
+}
+
+.bannertext {
+margin-left: 10rem;
+}
+
+
 }

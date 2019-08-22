@@ -122,23 +122,88 @@ p.linktext {
     top: 5rem;
   }
 }
-@media only screen and (max-width: 1600px) {
-  .footban {
-    top: 4rem;
+@media only screen and (max-width: 1366px) {
+  .mainnav {
+    width: 1328px;
+  }
+
+  .mobicons {
+    display: none;
   }
 }
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 1024px) {
   .footban {
     top: 3rem;
   }
+
+  .mainnav {
+    width: 96.2vw;
+  }
+
+  .links {
+    padding: 1rem;
+  }
+
+  .foot {
+    height: 16rem;
+    width: 100vw;
+  }
+
+  .pagebottom {
+    width: 100vw;
+  }
 }
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 768px) {
+  p {
+    text-align: center;
+  }
+
+  a {
+    text-align: center;
+  }
+
+  .righthead {
+    margin-left: 12rem;
+    width: 40%;
+  }
+
+  .mainnav {
+    width: 94.9vw;
+  }
+
   .footban {
     top: 2rem;
   }
 
-  .logowhite {
-    margin-left: 10px;
+  .foot {
+    height: 36vh;
+    width: 100vw;
+  }
+
+  .links {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .moblinks {
+    display: flex;
+  }
+
+  .footnav {
+    margin-right: 15px;
+  }
+
+  .links {
+    padding: 0;
+  }
+
+  .mobicons {
+    display: flex;
+    margin: -2rem 0 0 -12rem;
+  }
+
+  .pagebottom {
+    width: 100vw;
   }
 }
 @media only screen and (max-width: 540px) {
@@ -211,7 +276,40 @@ p.linktext {
   }
 
   .botimg, .icon {
+    display: flex;
+    justify-content: center;
     width: 70%;
+    margin: 120px 0 0 0;
+    padding: 0 5px;
+  }
+}
+@media only screen and (max-width: 360px) {
+  .foot {
+    height: 75vh;
+  }
+
+  .navsect {
+    margin-left: 10px;
+  }
+
+  .uppercontact {
+    font-size: 11px;
+  }
+
+  .logo {
+    margin-left: -30px;
+  }
+
+  .righthead {
+    margin-right: 25px;
+  }
+
+  .pagebottom {
+    height: 48px;
+  }
+
+  .logowhite {
+    margin: -3rem 0 0 13rem;
   }
 }
 
