@@ -46,7 +46,345 @@ h5.titletext {
   text-align: center;
 }
 
-button {body {body {
+button {body {body {/* BODY, TEXT AND REPEATED ASPECTS */
+
+body {
+  background-color: white;
+  font-family: "Open Sans", sans-serif;
+}
+
+p.headline {
+  font-weight: bold;
+  color: white;
+}
+p.boxtext {
+  color: white;
+}
+p.carotext {
+  color: white;
+}
+
+.maina {
+  color: black;
+  font-weight: bold;
+}
+
+h2 {
+  color: white;
+  width: 500px;
+  margin-left: 6rem;
+}
+
+h3 {
+  text-align: center;
+}
+h3.abouthead {
+  color: white;
+}
+h3.servicestitle {
+  color: black;
+}
+
+h5.titletext {
+  font-weight: bold;
+  font-size: 14px;
+  padding-top: 5px;
+}
+
+a.specquote {
+  width: 42%;
+  height: 2rem;
+  border: solid #ff6633 3px;
+  background-color: white;
+  color: black;
+  padding: 5px;
+  margin-left: 2px;
+}
+a.aboutbutton {
+  width: 8%;
+  height: 2rem;
+  background-color: #ff6633;
+  color: white;
+  border: solid white 3px;
+  padding: 5px;
+}
+a.carobutt {
+  width: 5rem;
+  height: 2rem;
+  background-color: #ff531a;
+  margin-left: 2px;
+  color: white;
+  padding: 5px;
+}
+
+hr {
+  display: none;
+}
+
+/* CAROUSEL AND JUST UNDER */
+
+.titletext {
+  margin-top: 0px;
+  text-align: center;
+}
+
+.banner {
+  display: flex;
+  justify-content: center;
+  padding: 250px 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.caro {
+  overflow-y: hidden;
+  width: 100vw;
+}
+
+.bannertext {
+  text-align: center;
+  width: 700px;
+  margin-left: 35rem;
+}
+
+.undercarousel {
+  background-color: #ff6633;
+  width: 100vw;
+  color: white;
+  height: 2em;
+}
+
+/* SERVICES */
+
+.services {
+  display: flex;
+  justify-content: center;
+}
+
+.titleplusimage {
+  display: flex;
+}
+
+.img {
+  margin: 10px 4px 0 0;
+  height: 90%;
+}
+
+.servicemain {
+  margin-top: -5px;
+}
+
+.iefix {
+  margin-top: 8px;
+}
+
+.skip, .comwaste, .recycle {
+  display: flex;
+  flex-direction: column;
+  margin: 0 30px;
+}
+
+/* ABOUT */
+
+.about {
+  background-color: #ff6633;
+  background-image: url(img/bee.png);
+  background-repeat: no-repeat;
+  background-position-y: -210px;
+  height: 18rem;
+  width: 100vw;
+  margin-top: 25px;
+  text-align: center;
+  padding-top: 80px;
+}
+
+/* NEWS */
+
+.latest {
+  display: flex;
+  justify-content: center;
+}
+
+.article {
+  width: 18%;
+  margin: 0 20px;
+}
+
+/* MEDIA QUERIES */
+
+/* MEDIA QUERIES FOR PHONE */
+
+@media only screen and (max-width: 320px) {
+  .about {
+    height: 310px;
+  }
+}
+@media only screen and (max-width: 360px) {
+  hr {
+    display: block;
+    border-top: 1 px black dotted;
+    margin-top: 1rem;
+  }
+
+  p {
+    font-size: 14px;
+  }
+  p.boxtext {
+    margin: 1rem 5px;
+    width: 94%;
+  }
+  p.headline {
+    margin: 1rem 5px;
+    width: 94%;
+  }
+
+  a.specquote {
+    width: 60%;
+  }
+
+  .titletext {
+    font-size: 12px;
+  }
+
+  .undercarousel {
+    height: 3rem;
+  }
+
+  .comwaste, .recycle, .skip {
+    text-align: center;
+  }
+
+  .titleplusimage {
+    align-self: center;
+  }
+
+  .about {
+    height: 300px;
+  }
+}
+@media only screen and (max-width: 430px) {
+  p {
+    font-size: 14px;
+  }
+  p.mobp {
+    text-align: center;
+  }
+  p.date {
+    margin-left: 10px;
+  }
+  p.boxtext {
+    margin: 1rem 5px;
+    width: 94%;
+  }
+  p.headline {
+    margin: 1rem 5px;
+    width: 94%;
+  }
+
+  h3.abouthead {
+    margin: 0;
+  }
+
+  h4 {
+    text-align: center;
+  }
+
+  hr {
+    display: block;
+    border-top: 1 px black dotted;
+    margin-top: 1rem;
+  }
+
+  .caro {
+    display: none;
+  }
+
+  .undercarousel {
+    width: 96vw;
+    margin-top: 5px;
+  }
+
+  .services {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .latest {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .newspic {
+    width: 94vw;
+  }
+
+  .mobart {
+    display: none;
+  }
+
+  .about {
+    background-image: none;
+    padding-top: 40px;
+  }
+
+  a.aboutbutton {
+    width: 110px;
+  }
+
+  .article {
+    width: 94vw;
+    margin: 4px 15px;
+  }
+
+  .comwaste, .recycle, .skip {
+    text-align: center;
+  }
+
+  .titleplusimage {
+    align-self: center;
+  }
+}
+
+/* MEDIA QUERIES FOR TABLET */
+
+@media only screen and (max-width: 768px) {
+  .bannertext {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 1366px) {
+  .mainnav {
+    width: 900px;
+  }
+
+  img.tab {
+    width: 100%;
+  }
+
+  .bannertext {
+    margin-left: 20rem;
+  }
+}
+@media only screen and (max-width: 1025px) {
+  button.aboutbutton {
+    width: 110px;
+  }
+
+  img.tab {
+    width: 100%;
+  }
+
+  .bannertext {
+    margin-left: 10rem;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
+
   background-color: white;
   font-family: "Open Sans", sans-serif;
 }
