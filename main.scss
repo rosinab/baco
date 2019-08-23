@@ -59,7 +59,403 @@ $darkerorange: #ff531a;
 
 
 // BODY, TEXT AND REPEATED ASPECTS
+// MIXINS
 
+
+$mainorange: #ff6633;
+$mainwhite: white;
+$mainblack: black;
+$darkerorange: #ff531a;
+
+@mixin primaryfont 
+{font-family: 'Open Sans', sans-serif; }
+
+
+// BODY, TEXT AND REPEATED ASPECTS
+
+body {
+background-color: $mainwhite;
+@include primaryfont()
+};
+
+p {
+&.headline {
+font-weight: bold;
+color: $mainwhite;
+}
+&.boxtext {
+color: $mainwhite;
+}
+&.carotext {
+color: $mainwhite;
+}
+}
+
+.maina {
+color: $mainblack;
+font-weight: bold;
+}
+
+h2 {
+color: $mainwhite;
+width: 500px;
+margin-left: 6rem;
+}
+
+h3 {
+    text-align: center;
+    &.abouthead{
+    color: $mainwhite;
+    }
+    &.servicestitle {
+    color: $mainblack;
+    }
+    }
+
+h5 {
+    &.titletext {
+    font-weight: bold;
+    font-size: 14px;
+    padding-top: 5px;
+    }
+}
+
+a {
+    &.specquote {
+    width: 42%;
+    height: 2rem;
+    border: solid $mainorange 3px;
+    background-color: $mainwhite;
+    color: $mainblack;
+    padding: 5px;
+    margin-left: 2px;
+    }
+    &.aboutbutton {
+    width: 8%;
+    height: 2rem;
+    background-color: $mainorange;
+    color: $mainwhite;
+    border: solid $mainwhite 3px;
+    padding: 5px;
+    }
+    &.carobutt {
+        width: 5rem;
+        height: 2rem;
+        background-color: #ff531a;
+        margin-left: 2px;
+        color: $mainwhite;
+        padding: 5px;
+    }
+    }
+
+hr {
+display: none;
+}
+
+
+// CAROUSEL AND JUST UNDER
+
+.titletext {
+margin-top: 0px;
+text-align: center;
+}
+
+.banner {
+display: flex;
+justify-content: center;
+padding: 250px 0;
+background-repeat: no-repeat; 
+background-position: center; 
+background-size: cover;
+overflow: hidden;
+}
+
+.caro {
+overflow-y: hidden;
+width: 100vw;
+}
+
+.bannertext {
+text-align: center;
+width: 700px;
+margin-left: 35rem;
+}
+
+.undercarousel {
+background-color: $mainorange;
+width: 100vw;
+color: $mainwhite;
+height: 2em;
+}
+
+// SERVICES
+
+.services {
+display: flex;
+justify-content: center;
+}
+
+.titleplusimage {
+display: flex;
+}
+
+.img {
+margin: 10px 4px 0 0;
+height: 90%;
+}
+
+.servicemain {
+margin-top: -5px;
+}
+
+.iefix {
+margin-top: 8px;
+}
+
+.skip, .comwaste, .recycle {
+display: flex;
+flex-direction: column;
+margin: 0 30px;
+}
+
+
+// ABOUT
+
+.about {
+background-color: $mainorange;
+background-image: url(img/bee.png);
+background-repeat: no-repeat;
+background-position-y: -210px;
+height: 18rem;
+width: 100vw;
+margin-top: 25px;
+text-align: center;
+padding-top: 80px;
+}
+
+// NEWS
+
+
+.latest {
+display: flex;
+justify-content: center;
+}
+
+.article {
+width: 18%;
+margin: 0 20px;
+}
+
+// MEDIA QUERIES
+
+// MEDIA QUERIES FOR MOBILE
+
+@media only screen and (max-width: 320px) {
+
+.about {
+    height: 310px;
+    }
+
+.newspic {
+margin-left: -5px;
+}
+
+.article {
+margin: 0 4rem;
+width: 290px;
+}
+    
+}
+
+@media only screen and (max-width: 360px) {
+
+hr {
+    display: block;
+    border-top: 1 px black dotted;
+    margin-top: 1rem;
+}
+
+p {
+font-size: 14px;
+&.boxtext{
+margin: 1rem 5px;
+width: 94%;
+}
+&.headline{
+    margin: 1rem 5px;
+    width: 94%;
+    }
+}
+
+a {
+&.specquote {
+width: 60%;
+}
+}
+
+.titletext {
+font-size: 12px;
+}
+
+.undercarousel {
+height: 3rem;
+}
+
+.comwaste, .recycle, .skip {
+text-align: center;
+}
+
+.titleplusimage {
+align-self: center;
+}
+
+.newspic {
+margin-left: 5px;
+}
+
+.about {
+height: 300px;
+}
+
+}
+
+@media only screen and (max-width: 430px) {
+
+    p {
+    font-size: 14px;
+    &.mobp{
+        text-align: center;
+    }
+    &.date {
+        margin-left: 10px;
+    }
+    &.boxtext{
+        margin: 1rem 5px;
+        width: 94%;
+        }
+    &.headline{
+        margin: 1rem 5px;
+        width: 94%;
+            }
+    }
+    
+    h3 {
+        &.abouthead {
+        margin: 0;
+        }
+    }
+    
+    h4 {
+    text-align: center;
+    }
+    
+    hr {
+        display: block;
+        border-top: 1 px black dotted;
+        margin-top: 1rem;
+    }
+    
+    .caro{
+        display: none;
+    }
+    
+    .undercarousel {
+    width: 96vw;
+    margin-top: 5px;
+    }
+    
+    .services {
+        display: flex;
+        flex-direction: column;
+        }
+    
+    .latest {
+    display: flex;
+    flex-direction: column;
+    }
+    
+    .newspic {
+    margin-left: -5px;
+    }
+    
+    .mobart {
+    display: none;
+    }
+    
+    .about {
+        background-image: none;
+        padding-top: 40px;
+        }
+        
+   a {
+    &.aboutbutton {
+    width: 110px;
+    }
+    }
+    
+    
+    .article {
+        width: 94vw;
+        margin: 4px 15px;
+        }
+    
+   .comwaste, .recycle, .skip {
+    text-align: center;
+    }
+            
+    .titleplusimage {
+    align-self: center;
+    }      
+    }
+
+// MEDIA QUERIES FOR TABLET
+
+@media only screen and (max-width: 768px) {
+.bannertext {
+display: flex;
+justify-content: center;
+flex-direction: column;
+}
+}
+
+@media only screen and (max-width: 1366px) {
+
+.mainnav {
+width: 900px;
+}
+
+img {
+    &.tab {
+    width: 100%;
+    }
+    }
+
+.bannertext {
+margin-left: 20rem;
+}
+}
+
+
+@media only screen and (max-width: 1025px) {
+
+button {
+&.aboutbutton {
+width: 110px;
+}
+}
+
+img {
+&.tab {
+width: 100%;
+}
+}
+
+.bannertext {
+margin-left: 10rem;
+}
+
+
+}
 body {
 background-color: $mainwhite;
 @include primaryfont()
